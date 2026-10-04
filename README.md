@@ -16,14 +16,14 @@ Node.js / JavaScript で実装した SAP CAP のサンプルです。SQLite に�
 
 ## 起動方法
 
-依存関係をインストールして CAP サーバーを起動します。
+依存関係をインストールして CAP サーバーを起動します。開発用の `watch` は SQLite のインメモリデータベースを使用するため、初期 CSV が自動投入され、個別のデプロイは不要です。
 
 ```bash
 npm install
 npm run watch
 ```
 
-初回起動前に SQLite データベースを作成し、`db/data/demo-Products.csv` のデータを読み込みます。
+ファイルとして SQLite データベース（`db.sqlite`）を作成・更新したい場合のみ、次を実行します。
 
 ```bash
 npm run deploy
