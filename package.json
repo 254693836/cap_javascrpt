@@ -1,0 +1,32 @@
+{
+  "name": "cap-product-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SAP CAP Node.js product catalog sample",
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch",
+    "deploy": "cds deploy --to sqlite",
+    "build": "cds build --production",
+    "test": "cds deploy --to sqlite && node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@cap-js/sqlite": "^2.4.3",
+    "@sap/cds": "^9.0.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@cap-js/cds-test": "^1.0.0",
+    "@sap/cds-dk": "^9.0.0"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db.sqlite"
+        }
+      }
+    }
+  }
+}

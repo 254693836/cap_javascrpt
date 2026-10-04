@@ -1,0 +1,13 @@
+{
+  "name": "product-catalog-ui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "UI5_DATA_DIR=../../../.ui5 fiori run --open \"test/flpSandbox.html#productcatalog-display\""
+  },
+  "devDependencies": {
+    "@sap/ux-ui5-tooling": "^1.33.0",
+    "@ui5/cli": "^4.0.0",
+    "ui5-middleware-simpleproxy": "^3.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+app/*/node_modules/
+db.sqlite*
+gen/
+.npm-cache/
+.ui5/
