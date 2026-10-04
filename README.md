@@ -39,7 +39,7 @@ npm install
 npm start
 ```
 
-表示された URL をブラウザーで開いてください。Object Page の **Check** を押すと、現在の商品の存在確認結果がポップアップで表示されます。
+表示された `http://localhost:8080/index.html` をブラウザーで開いてください。Object Page の **Check** を押すと、現在の商品の存在確認結果がポップアップで表示されます。
 
 ## 確認
 
