@@ -1,4 +1,4 @@
-using CatalogService as service from '../../srv/catalog-service';
+using CatalogService as service from '../../srv/catalog2-service';
 annotate service.Products with @(
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',

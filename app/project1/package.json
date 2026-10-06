@@ -16,7 +16,7 @@
     "eslint": "^9"
   },
   "scripts": {
-    "start": "fiori run --open \"test/flpSandbox.html#project1-tile\"",
+    "start": "fiori run --open \"index.html\"",
     "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
   }
 }

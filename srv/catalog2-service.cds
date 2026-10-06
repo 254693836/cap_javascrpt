@@ -1,6 +1,6 @@
 using { demo as db } from '../db/schema';
 
-@path: '/catalog'
+@path: '/catalog3'
 service CatalogService {
   entity Products as projection on db.Products actions {
     action checkExists() returns CheckResult;

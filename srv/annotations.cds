@@ -1,4 +1,4 @@
-using CatalogService from './catalog-service';
+using CatalogService from './catalog2-service';
 using { Currency } from '@sap/cds/common';
 
 annotate CatalogService.Products with @(
