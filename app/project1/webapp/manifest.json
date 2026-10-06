@@ -116,6 +116,18 @@
                     "type": "ResponsiveTable"
                   }
                 }
+              },
+              "content": {
+                "header": {
+                  "actions": {
+                    "create": {
+                      "press": "project1.ext.controller.Createnew.create",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "新規"
+                    }
+                  }
+                }
               }
             }
           }
