@@ -4,8 +4,8 @@
   "private": true,
   "description": "SAP CAP Node.js product catalog sample",
   "scripts": {
-    "start": "cds-serve --in-memory",
-    "watch": "cds watch --in-memory",
+    "start": "cds-serve",
+    "watch": "cds watch",
     "deploy": "cds deploy --to sqlite:db.sqlite",
     "build": "cds build --production",
     "test": "node --test test/*.test.js",
@@ -26,7 +26,7 @@
       "db": {
         "kind": "sqlite",
         "credentials": {
-          "database": ":memory:"
+          "database": "db.sqlite"
         }
       }
     }
