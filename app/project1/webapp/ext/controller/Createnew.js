@@ -76,6 +76,20 @@ sap.ui.define([
                                 throw new Error(error.error && error.error.message || "商品の保存に失敗しました。");
                             }
 
+                            const created = await response.json();
+                            const activationResponse = await fetch(
+                                "/catalog3/Products(ID=" + created.ID + ",IsActiveEntity=false)/CatalogService.draftActivate",
+                                {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: "{}"
+                                }
+                            );
+                            if (!activationResponse.ok) {
+                                const error = await activationResponse.json().catch(() => ({}));
+                                throw new Error(error.error && error.error.message || "商品の保存に失敗しました。");
+                            }
+
                             dialog.close();
                             MessageToast.show("商品を登録しました。");
                             window.location.reload();

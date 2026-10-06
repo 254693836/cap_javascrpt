@@ -116,11 +116,22 @@
                     "type": "ResponsiveTable"
                   },
                   "actions": {
+                    "createObject": {
+                      "press": "project1.ext.controller.CreateObject.create",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "新規=draftの作成",
+                      "requiresSelection": false,
+                      "position": {
+                        "placement": "Before",
+                        "anchor": "create"
+                      }
+                    },
                     "create": {
                       "press": "project1.ext.controller.Createnew.create",
                       "visible": true,
                       "enabled": true,
-                      "text": "新規",
+                      "text": "新規1",
                       "requiresSelection": false,
                       "position": {
                         "placement": "Before",
