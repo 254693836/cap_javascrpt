@@ -20,14 +20,14 @@ module.exports = (srv) => {
     }
   });
 
-  srv.on('checkExists', Products, async (req) => {
+  srv.on('checkExists', [Products, Products.drafts], async (req) => {
     const { ID } = req.params[0] || {};
-    const product = await SELECT.one.from(Products).columns('ID').where({ ID });
+    const product = await SELECT.one.from(req.target).columns('ID').where({ ID });
     const found = Boolean(product);
 
     return {
       found,
-      message: found ? 'データは存在します' : 'データは存在しません'
+      message: found ? 'データは存在します1' : 'データは存在しません2'
     };
   });
 };

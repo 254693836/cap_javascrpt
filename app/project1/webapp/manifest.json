@@ -151,7 +151,19 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Products"
+              "contextPath": "/Products",
+              "content": {
+                "header": {
+                  "actions": {
+                    "checkExists": {
+                      "press": "project1.ext.controller.CheckExists.check",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "存在チェック"
+                    }
+                  }
+                }
+              }
             }
           }
         }
